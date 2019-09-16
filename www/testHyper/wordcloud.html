@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>
+    <script src="./testWordCloud.js"></script>
+    <script src="./browserify.js"></script>
+    <META charset="utf-8">
+</head>
+
+<body id="cloud">
+    <div style="display: flex;">
+        <textarea id="textArea_kakao" cols="100" rows="12"></textarea>
+        <input type="button" id="send" value="전송" />
+        <table border="1px">
+            <tr>
+                <th>순위</th>
+                <th>문자</th>
+                <th>빈도</th>
+            </tr>
+            <tr>
+                <td> 1위</td>
+                <td  id="td_one"></td>
+                <td id="td_one_freq"></td>
+            </tr>
+            <tr>
+                <td>2위</td>
+                <td  id="td_two"></td>
+                <td id="td_two_freq"></td>
+            </tr>
+            <tr>
+                <td>3위</td>
+                <td  id="td_three"></td>
+                <td id="td_three_freq"></td>
+            </tr>
+            <tr>
+                <td>4위</td>
+                <td  id="td_four"></td>
+                <td id="td_four_freq"></td>
+            </tr>
+            <tr>
+                <td>5위</td>
+                <td  id="td_five"></td>
+                <td id="td_five_freq"></td>
+            </tr>
+            <tr>
+                <td>6위</td>
+                <td  id="td_six"></td>
+                <td id="td_six_freq"></td>
+            </tr>
+            <tr>
+                <td>7위</td>
+                <td  id="td_seven"></td>
+                <td id="td_seven_freq"></td>
+            </tr>
+            <tr>
+                <td>8위</td>
+                <td  id="td_eight"></td>
+                <td id="td_eight_freq"></td>
+            </tr>
+            <tr>
+                <td>9위</td>
+                <td  id="td_nine"></td>
+                <td  id="td_nine_freq"></td>
+            </tr>
+            <tr>
+                <td>10위</td>
+                <td id="td_ten"></td>
+                <td id="td_ten_freq"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="testDiv"></div>
+    <script>
+        //var wordCloud = new D3_wordcloud("#testDiv");
+        $("#send").click(function () {
+            console.log($("#textArea_kakao").val());
+            var wordCloud = new testCloud($("#textArea_kakao").val());
+        });
+
+    </script>
+</body>
+
+</html>
