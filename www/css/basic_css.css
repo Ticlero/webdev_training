@@ -60,3 +60,32 @@
             background-color: #555;
             color: white;
         }
+        .gallary_ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 25;
+            overflow: auto;
+            width: 1500px;
+        }
+
+        .gallary_ul li{
+            margin: 5px;
+            border: 1px solid #ccc;
+            display: block;
+            float: left;
+        }
+        .gallary_ul li img{
+            width: 250px;
+            height: 150px;
+        }
+
+        .gallary_ul li img:hover{
+            width: 300px;
+            height: 200px;
+            border: 10px tomato;
+        }
+
+        .gallary_ul li div{
+            text-align: center;
+            padding: 15px;
+        }
