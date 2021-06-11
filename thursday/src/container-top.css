@@ -1,0 +1,70 @@
+.phone-container .header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px 25px 30px;
+}
+
+.container-top .control-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 45%;
+}
+.container-top .control-menu i {
+  font-size: 24px;
+}
+
+.container-top .images-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+.container-top .images-list > img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.container-top .images-list .more-image {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3f67ff;
+  border-radius: 10px;
+}
+
+.container-top .tags {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2953ff;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.container-top .tag {
+  width: fit-content;
+  height: 30px;
+  background-color: #bccdff;
+  margin-right: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-top .tag > span {
+  padding: 10px;
+}

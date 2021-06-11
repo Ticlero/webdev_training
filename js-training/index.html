@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <!-- <input id="m-open" type="button" value="modal open">
+    <div class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-contents">
+            <h1>Hello I'm Modal</h1>
+            <input id="cancel" type="button" value="Cancel">
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="js/modal.js"></script> -->
+    <input id="test" type="button" value="click">
+    <div class="nav">
+        <h1>test</h1>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    <script>
+        var btn = document.querySelector("#test");
+        var nav = document.querySelector(".nav");
+
+        btn.addEventListener("click", (e) => {
+            nav.classList.toggle("paint");
+            if (nav.classList.contains("paint")) {
+                nav.style.height = "300px";
+                nav.style.opacity = 1;
+                nav.style.animation = "show-anima 0.5s ease-in-out forwards";
+            } else if (nav.classList.contains("paint") === false) {
+                nav.style.height = "0px";
+                nav.style.opacity = 0;
+                nav.style.animation = "hide-anima 0.5s ease-in-out forwards";
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+html {
+  background-color: #f8f7ff;
+}
+
+body {
+  width: 100%;
+  padding: 30px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.phone-container {
+  width: 380px;
+  height: 810px;
+  border: 15px solid white;
+  background-color: #f8f8f8;
+  border-radius: 50px;
+  box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.85);
+}
+.phone-header-box {
+  display: flex;
+  padding: 30px 0 50px 0;
+  justify-content: center;
+  align-items: center;
+}
+.phone-header-box > h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.phone-login-inputs-box,
+.phone-login-info-search {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-login-inputs-box {
+  width: 100%;
+  align-items: center;
+}
+
+.phone-login-inputs-box > input {
+  width: 80%;
+  height: 25px;
+  padding: 0 0 0 10px;
+  border-radius: 5px;
+  /* box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2); */
+  opacity: 0.4;
+}
+.phone-login-inputs-box > input:focus {
+  outline: none;
+}
+
+.phone-login-inputs-box > input[type="password"] {
+  margin: 20px 0 15px 0;
+}
+
+.phone-login-forgot-box {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.red-text-color {
+  font-size: 12px;
+  color: red;
+}
+
+.phone-login-remember-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.phone-login-remember-box > label {
+  opacity: 0.5;
+  font-size: 14px;
+}
+.phone-login-remember-box > input {
+  font-size: 16px;
+}
+.phone-login-remember-box > input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+.phone-login-remember-box > input[type="checkbox"]:checked {
+  background-color: red;
+  box-shadow: 0 0 0 3px hotpink;
+}
